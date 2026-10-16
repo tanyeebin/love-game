@@ -194,7 +194,7 @@ function initLevel(idx,showIntro=true){
 }
 function setMenu(){
  game.mode='menu';game.level=clamp(save.lastLevel,0,LEVELS.length-1);game.camera=0;game.player.x=45;game.player.y=195;game.partner.x=16;game.partner.y=195;
- for(const id of ['hud','touchBar','homeTools','panelOverlay','dialogueBox','actionHint'])$(id).classList.add('hidden');$('menuOverlay').classList.remove('hidden');$('continueBtn').classList.toggle('hidden',!save.started);$('chapterSevenBtn').classList.remove('hidden');
+ for(const id of ['hud','touchBar','homeTools','panelOverlay','dialogueBox','actionHint'])$(id).classList.add('hidden');$('menuOverlay').classList.remove('hidden');$('continueBtn').classList.toggle('hidden',!save.started);
 }
 function localStorageAvailable(){try{return typeof localStorage!=='undefined'}catch(e){return false}}
 function startDialogue(lines,onComplete){game.dialogue=lines;game.dialogueIndex=0;game.afterDialogue=onComplete||null;game.mode='dialogue';$('dialogueBox').classList.remove('hidden');$('actionHint').classList.add('hidden');showDialogue()}
@@ -259,11 +259,6 @@ function beginNew(){
  if(save.started&&typeof window.confirm==='function'&&!window.confirm('Start a new game? This replaces your current progress. Export your save first if you want to keep it.'))return;
  const sound=save.sound;save=freshSave();save.sound=sound;writeSave();initLevel(0);
 }
-// Returning V3 players can jump to the four brand-new chapters without losing their old file.
-$('chapterSevenBtn').onclick=()=>{
- if(save.highestUnlocked<6){save.highestUnlocked=6;save.lastLevel=6;save.started=true;save.dogUnlocked=true;save.coins=Math.max(save.coins,200);writeSave()}
- initLevel(6);
-};
 $('homeShopBtn').onclick=shopPanel;$('homeClothesBtn').onclick=wardrobePanel;
 $('startBtn').onclick=beginNew;$('continueBtn').onclick=()=>initLevel(clamp(save.lastLevel,0,save.highestUnlocked),false);$('selectBtn').onclick=showMap;$('mapBtn').onclick=showMap;$('pauseBtn').onclick=showPause;
 // Safe, portable save transfer: use Export on a device and Import on another.
