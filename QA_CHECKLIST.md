@@ -23,3 +23,11 @@ Before sharing with your girlfriend, publish on GitHub Pages and smoke-test the 
 - [ ] Export and Import Save work if transferring an old save
 
 Tests used scripted positioning for collectibles and puzzles, and therefore do not prove every manual jumping route can be finished on every device. These are functional tests, not a guarantee of bug-free play.
+
+## Main menu update verification
+
+- [x] Removed V3 shortcut markup from GitHub `index.html` and standalone HTML.
+- [x] Removed legacy shortcut JavaScript handlers and `setMenu` reference in both bundles.
+- [x] `New Adventure`, `Continue My Story` (when a save exists), and `Journey Map` remain in the menu.
+- [x] Script syntax checked with Node.js.
+- [ ] Recheck menu buttons on the deployed GitHub Pages site after uploading.

@@ -1,6 +1,6 @@
 # Our Love Adventure — Final Edition ❤️
 
-![Our Love Adventure title screen](screenshots/menu.png)
+![Our Love Adventure gameplay](screenshots/moonlight-lake.png)
 
 A complete 10-chapter, English-language, cozy pixel platformer. Made with plain HTML, CSS, JavaScript and Canvas. **No dependencies, builds, accounts, or external assets.**
 
@@ -47,7 +47,7 @@ Follow the objective shown at the top left. Collect hearts, activate switches, a
 
 Progress is automatically saved to **this browser's local storage**, which is local to each site origin and browser. It **does not sync** between users or devices. The game includes **Export Save** and **Import Save** buttons to manually transfer progress via a JSON file. Export your save **before switching between the downloaded HTML file and GitHub Pages**, or switching browsers/devices. Starting a New Adventure resets the current save (after confirmation). Imported saves replace progress on that browser only after confirmation.
 
-The game will attempt to import V1, V2 and V3 local progress if older saves are visible on the same browser origin; this usually will not work across a `file://` page and a GitHub Pages site, so use Export/Import on the Final Edition as the reliable method. For prior versions without export, the "Played V3? Begin Chapter 7" button permits immediate access to the new chapters.
+The game will attempt to import V1, V2 and V3 local progress if older saves are visible on the same browser origin; this usually will not work across a `file://` page and a GitHub Pages site, so use Export/Import on the Final Edition as the reliable method.
 
 **Everything is offline-capable:** There are no trackers, analytics, ads, remote requests, or external libraries. Sound is off by default.
 
@@ -67,3 +67,7 @@ This is a **single-player** adventure with an AI-following companion and a puppy
 ## Tested in the Final Edition
 
 Automated browser testing covered all ten level-clear paths, hearts / keys / star collectibles, all puzzle switches, hidden letters, the furniture and wardrobe interfaces, final dialogue, save export-import, mobile on-screen movement, desktop keyboard movement and V3 save-data migration logic. A separate check confirmed the bridge collision geometry and that all linked website assets exist. Actual layout and gameplay should still be checked once on your published GitHub Pages URL, especially on your girlfriend’s phone.
+
+## Main menu update
+
+The former V3 shortcut (“Played V3? Begin Chapter 7”) has been removed from the main menu and JavaScript. New players begin at Chapter 1, while existing local saves can continue from their unlocked chapters. The Journey Map remains available.
