@@ -21,17 +21,17 @@ const LEVELS=[
   grounds:[[0,590],[648,1194],[1272,1910]],platforms:[[225,184,82,11],[365,172,62,11],[765,188,75,11],[893,175,66,11],[1360,178,77,11]],
   hearts:[[145,190],[265,158],[402,146],[516,196],[734,196],[812,162],[925,149],[1081,191],[1344,193],[1391,152],[1570,194]],keys:[],stars:[],
   objects:[{x:132,type:'sign',label:'Garden sign',lines:[['Garden Sign','Welcome! Move with A / D or the arrow keys. Jump with Space. Collect at least five hearts.'],['Garden Sign','At the pink gate, press E or tap the heart button to travel onward.']]},{x:1047,type:'sign',label:'A little promise',lines:[['A Little Promise','Love is not always walking at the same speed. Sometimes it is choosing to wait.']]}],
-  intro:[['Narrator','One morning, the stars of love scattered into tiny hearts across a storybook world.'],['Luna','Shall we find the hearts together?'],['Milo','Anywhere, as long as we go together.']],
-  outro:[['Luna','The breeze smells like strawberries and spring.'],['Milo','Maybe adventures feel sweeter when we share them.']],
+  intro:[['Narrator','One morning, the stars of love scattered into tiny hearts across a storybook world.'],['TANYA','Shall we find the hearts together?'],['TAN','Anywhere, as long as we go together.']],
+  outro:[['TANYA','The breeze smells like strawberries and spring.'],['TAN','Maybe adventures feel sweeter when we share them.']],
   message:'Collect five hearts, then reach the pink gate.',checkpoint:[42,650,1278]},
  {id:'town',title:'Heartfelt Town',emoji:'🏘️',number:'02',short:'Three keys and a little flower shop',width:1910,exit:1780,goal:5,
   grounds:[[0,620],[674,1155],[1220,1910]],platforms:[[274,191,74,10],[369,188,91,10],[848,191,68,10],[917,174,98,11],[1392,193,92,11]],
   hearts:[[148,194],[318,165],[516,193],[726,190],[885,164],[1055,193],[1278,194],[1463,168],[1631,195]],keys:[[413,161],[966,146],[1447,167]],stars:[],
   objects:[{x:192,type:'sign',label:'Town notice',lines:[['Town Notice','Three golden keys are hidden around town. Collect them and five hearts to unlock the exit.']]},
-   {x:771,type:'flower',label:'Flower stall',lines:[['Florist','A small bouquet for two lovely adventurers!'],['Luna','Let’s carry these flowers into our next chapter.']]},
+   {x:771,type:'flower',label:'Flower stall',lines:[['Florist','A small bouquet for two lovely adventurers!'],['TANYA','Let’s carry these flowers into our next chapter.']]},
    {x:1161,type:'sign',label:'Coffee shop',lines:[['Coffee Shop','Today’s special: hot chocolate, cake, and an extra spoonful of happiness.']]}],
-  intro:[['Narrator','Beyond the garden sits a small town with glowing windows and friendly shops.'],['Milo','I heard three lost keys open its gate.'],['Luna','Then let’s explore. Maybe there is cake, too!']],
-  outro:[['Milo','Three keys, one bouquet, and so many little moments.'],['Luna','The sky looks cloudy ahead. Shall we share an umbrella?']],
+  intro:[['Narrator','Beyond the garden sits a small town with glowing windows and friendly shops.'],['TAN','I heard three lost keys open its gate.'],['TANYA','Then let’s explore. Maybe there is cake, too!']],
+  outro:[['TAN','Three keys, one bouquet, and so many little moments.'],['TANYA','The sky looks cloudy ahead. Shall we share an umbrella?']],
   message:'Find three keys and five hearts before leaving town.',checkpoint:[42,680,1230]},
  {id:'rain',title:'Promise in the Rain',emoji:'☔',number:'03',short:'Share an umbrella and restore the bridge',width:1910,exit:1780,goal:5,
   grounds:[[0,1064],[1169,1910]],platforms:[[280,188,88,11],[581,184,82,11],[887,186,75,11],[1258,187,87,11],[1544,181,83,11]],
@@ -39,8 +39,8 @@ const LEVELS=[
   objects:[{x:186,type:'sign',label:'Rainy-day guide',lines:[['Rainy-day Guide','Find the umbrella and activate both glowing switches.']]},
    {x:748,type:'switch',label:'First rain switch',switchId:'bridge'},
    {x:1367,type:'switch',label:'Second rain switch',switchId:'beacon'}],umbrellaX:465,
-  intro:[['Narrator','Soft rain begins to fall, turning puddles into little mirrors.'],['Luna','I think we need an umbrella.'],['Milo','Then let’s find one. Even rainy days can be beautiful together.']],
-  outro:[['Luna','Look, a rainbow!'],['Milo','Sunny days and rainy days are both worth sharing.']],
+  intro:[['Narrator','Soft rain begins to fall, turning puddles into little mirrors.'],['TANYA','I think we need an umbrella.'],['TAN','Then let’s find one. Even rainy days can be beautiful together.']],
+  outro:[['TANYA','Look, a rainbow!'],['TAN','Sunny days and rainy days are both worth sharing.']],
   message:'Find the umbrella, activate two switches, and collect five hearts.',checkpoint:[42,530,1185]},
  {id:'forest',title:'Starlit Forest',emoji:'✨',number:'04',short:'Rescue Pudding and light the forest paths',width:2110,exit:1972,goal:6,
   grounds:[[0,856],[988,1374],[1505,2110]],platforms:[[290,187,74,10],[605,179,81,10],[1075,189,85,10],[1570,181,83,11],[1810,176,92,11]],
@@ -49,9 +49,9 @@ const LEVELS=[
    {x:461,type:'dog',label:'Rescue the puppy'},
    {x:754,type:'switch',label:'Pudding’s starlight switch',switchId:'forest_bridge',needs:'dogpartner'},
    {x:1253,type:'switch',label:'Forest glade switch',switchId:'forest_glade',needs:'partner'},
-   {x:1680,type:'secret',label:'A moonlit letter',secretId:'moonletter',lines:[['Luna','A tiny glowing envelope!'],['Secret Letter','Every path we walk together becomes a constellation in my heart.'],['Milo','Let’s keep it safe.']] }],
-  intro:[['Narrator','Moonlight guides the two adventurers into a softly glowing forest.'],['Luna','Did you hear that little bark?'],['Milo','Let’s see who needs help. Nobody gets left behind.']],
-  outro:[['Luna','Pudding has found his people!'],['Milo','Next stop: a bridge above the clouds.']],
+   {x:1680,type:'secret',label:'A moonlit letter',secretId:'moonletter',lines:[['TANYA','A tiny glowing envelope!'],['Secret Letter','Every path we walk together becomes a constellation in my heart.'],['TAN','Let’s keep it safe.']] }],
+  intro:[['Narrator','Moonlight guides the two adventurers into a softly glowing forest.'],['TANYA','Did you hear that little bark?'],['TAN','Let’s see who needs help. Nobody gets left behind.']],
+  outro:[['TANYA','Pudding has found his people!'],['TAN','Next stop: a bridge above the clouds.']],
   message:'Rescue Pudding, light both bridges, and collect six hearts.',checkpoint:[42,510,1008,1530]},
  {id:'sky',title:'Bridge of Clouds',emoji:'🌈',number:'05',short:'Collect star wishes high above the world',width:2210,exit:2070,goal:7,
   grounds:[[0,488],[618,1060],[1190,1683],[1814,2210]],platforms:[[220,179,85,11],[712,185,78,11],[1340,177,93,11],[1908,181,90,11]],
@@ -61,9 +61,9 @@ const LEVELS=[
    {x:426,type:'switch',label:'Wind switch',switchId:'sky_wind',needs:'partner'},
    {x:990,type:'switch',label:'Pudding’s cloud switch',switchId:'sky_cloud',needs:'dog'},
    {x:1612,type:'switch',label:'Star-wish switch',switchId:'sky_wish',needs:'stars'},
-   {x:1925,type:'secret',label:'A wish in a bottle',secretId:'wishbottle',lines:[['Luna','There is a tiny wish bottle in the clouds.'],['Wish Bottle','May we always find each other, no matter how far we wander.'],['Milo','That’s my favorite wish.']]}],
-  intro:[['Narrator','The forest opens to islands floating in a sea of clouds.'],['Milo','Some of these bridges only appear when we light their switches.'],['Luna','Then the three of us will make our own path.']],
-  outro:[['Luna','The stars found their way home! Look, a light in the distance.'],['Milo','A little house is waiting at the end of the rainbow.']],
+   {x:1925,type:'secret',label:'A wish in a bottle',secretId:'wishbottle',lines:[['TANYA','There is a tiny wish bottle in the clouds.'],['Wish Bottle','May we always find each other, no matter how far we wander.'],['TAN','That’s my favorite wish.']]}],
+  intro:[['Narrator','The forest opens to islands floating in a sea of clouds.'],['TAN','Some of these bridges only appear when we light their switches.'],['TANYA','Then the three of us will make our own path.']],
+  outro:[['TANYA','The stars found their way home! Look, a light in the distance.'],['TAN','A little house is waiting at the end of the rainbow.']],
   message:'Find three star wishes, light three bridges, and collect seven hearts.',checkpoint:[42,635,1208,1832]},
  {id:'home',title:'Our Cozy Home',emoji:'🏡',number:'06',short:'A place to rest, decorate, and dream',width:1290,exit:1180,goal:5,
   grounds:[[0,1290]],platforms:[],hearts:[[130,197],[319,196],[515,195],[795,195],[1024,194],[1110,197]],keys:[],stars:[],
@@ -73,9 +73,9 @@ const LEVELS=[
    {x:625,type:'switch',label:'Kitchen light',switchId:'home_kitchen',needs:'partner'},
    {x:761,type:'wardrobe',label:'Matching outfits'},
    {x:929,type:'switch',label:'Balcony light',switchId:'home_balcony',needs:'dog'},
-   {x:1040,type:'secret',label:'The letter behind the bookshelf',secretId:'homesecret',lines:[['Luna','There is a folded letter behind the bookshelf!'],['Secret Letter','I don’t need a grand adventure every day. Coming home to you is magic enough.'],['Milo','Then let’s keep making ordinary days extraordinary.']]}],
-  intro:[['Narrator','At the end of the cloud bridge stands a little home, glowing like a candle.'],['Luna','We made it! It is still a little empty, though.'],['Milo','Let’s light it up, pick some furniture, and make a cozy corner for Pudding.']],
-  outro:[['Luna','Every light is glowing. It really feels like home now.'],['Milo','And our journey is not over. Let’s go see what lies beyond our doorstep!'],['Pudding','Woof! Our next adventure awaits!']],
+   {x:1040,type:'secret',label:'The letter behind the bookshelf',secretId:'homesecret',lines:[['TANYA','There is a folded letter behind the bookshelf!'],['Secret Letter','I don’t need a grand adventure every day. Coming home to you is magic enough.'],['TAN','Then let’s keep making ordinary days extraordinary.']]}],
+  intro:[['Narrator','At the end of the cloud bridge stands a little home, glowing like a candle.'],['TANYA','We made it! It is still a little empty, though.'],['TAN','Let’s light it up, pick some furniture, and make a cozy corner for Pudding.']],
+  outro:[['TANYA','Every light is glowing. It really feels like home now.'],['TAN','And our journey is not over. Let’s go see what lies beyond our doorstep!'],['Pudding','Woof! Our next adventure awaits!']],
   message:'Light three lamps, buy two decorations, and collect five hearts.',checkpoint:[42,350,670,1010]},
  {id:'lake',title:'Moonlight Lake',emoji:'🌙',number:'07',short:'Follow floating lanterns across the water',width:2070,exit:1930,goal:7,
   grounds:[[0,500],[625,1040],[1160,1540],[1655,2070]],platforms:[[200,174,83,11],[735,181,85,11],[1214,177,85,11],[1710,180,83,11]],
@@ -86,9 +86,9 @@ const LEVELS=[
    {x:444,type:'switch',label:'First lake lantern',switchId:'lake_one',needs:'partner'},
    {x:983,type:'switch',label:'Second lake lantern',switchId:'lake_two',needs:'dog'},
    {x:1479,type:'switch',label:'Third lake lantern',switchId:'lake_three',needs:'stars'},
-   {x:1800,type:'secret',label:'Message in a paper boat',secretId:'paperboat',lines:[['Luna','A little paper boat washed up by the shore.'],['Paper Boat','Even across the widest lake, I would always choose the path that leads to you.']]}],
-  intro:[['Narrator','Just beyond your new home, a silver lake shimmers under a peach-colored moon.'],['Luna','The lanterns are out! We can bring their light back.'],['Milo','One little flame at a time.']],
-  outro:[['Milo','The entire lake looks like the night sky now.'],['Luna','And we made every lantern shine, together.']],
+   {x:1800,type:'secret',label:'Message in a paper boat',secretId:'paperboat',lines:[['TANYA','A little paper boat washed up by the shore.'],['Paper Boat','Even across the widest lake, I would always choose the path that leads to you.']]}],
+  intro:[['Narrator','Just beyond your new home, a silver lake shimmers under a peach-colored moon.'],['TANYA','The lanterns are out! We can bring their light back.'],['TAN','One little flame at a time.']],
+  outro:[['TAN','The entire lake looks like the night sky now.'],['TANYA','And we made every lantern shine, together.']],
   message:'Collect seven hearts and three moon sparks. Light all three lantern bridges.',checkpoint:[42,640,1178,1670]},
  {id:'carnival',title:'Sweetheart Carnival',emoji:'🎡',number:'08',short:'Playful booths, golden tickets, and warm lights',width:2060,exit:1920,goal:7,
   grounds:[[0,2060]],platforms:[[247,174,86,10],[710,183,96,10],[1221,174,95,10],[1680,181,90,10]],
@@ -98,9 +98,9 @@ const LEVELS=[
    {x:505,type:'switch',label:'Candy booth',switchId:'fair_candy',needs:'partner'},
    {x:1170,type:'switch',label:'Carousel booth',switchId:'fair_carousel',needs:'dog'},
    {x:1770,type:'switch',label:'Fireworks booth',switchId:'fair_fireworks',needs:'stars'},
-   {x:1558,type:'secret',label:'Prize-booth postcard',secretId:'carnivalcard',lines:[['Milo','This little postcard was meant for us.'],['Postcard','The best prize is finding someone who makes ordinary nights feel like a festival.']]}],
-  intro:[['Narrator','Music drifts across a meadow. A sleepy carnival is ready to open.'],['Luna','Look at all these candy-colored booths!'],['Milo','Let’s collect the tickets and bring the carnival to life.']],
-  outro:[['Luna','The carousel spins, and the carnival glitters!'],['Milo','My favorite ride is whatever we ride together.']],
+   {x:1558,type:'secret',label:'Prize-booth postcard',secretId:'carnivalcard',lines:[['TAN','This little postcard was meant for us.'],['Postcard','The best prize is finding someone who makes ordinary nights feel like a festival.']]}],
+  intro:[['Narrator','Music drifts across a meadow. A sleepy carnival is ready to open.'],['TANYA','Look at all these candy-colored booths!'],['TAN','Let’s collect the tickets and bring the carnival to life.']],
+  outro:[['TANYA','The carousel spins, and the carnival glitters!'],['TAN','My favorite ride is whatever we ride together.']],
   message:'Gather three golden tickets, light three booths, and collect seven hearts.',checkpoint:[42,600,1190,1660]},
  {id:'coast',title:'Lighthouse Promise',emoji:'🌊',number:'09',short:'Light the way home beneath a velvet sky',width:2140,exit:2000,goal:8,
   grounds:[[0,700],[826,1430],[1550,2140]],platforms:[[245,174,81,10],[960,174,82,10],[1620,177,85,10]],
@@ -111,9 +111,9 @@ const LEVELS=[
    {x:628,type:'switch',label:'First wooden pier',switchId:'coast_pier',needs:'partner'},
    {x:1355,type:'switch',label:'Second wooden pier',switchId:'coast_bridge',needs:'dog'},
    {x:1910,type:'switch',label:'Lighthouse beacon',switchId:'coast_beacon',needs:'stars'},
-   {x:1800,type:'secret',label:'Seaside message bottle',secretId:'coastletter',lines:[['Luna','A note from a traveler long ago.'],['Message Bottle','When the sea is dark, be someone else’s light.']]}],
-  intro:[['Narrator','At the edge of the world, the sea whispers against a quiet pier.'],['Luna','The lighthouse is dark. Someone could lose their way.'],['Milo','We have plenty of light to share. Let’s help.']],
-  outro:[['Milo','The lighthouse is shining again!'],['Luna','Now every boat can find its way home. So can we.']],
+   {x:1800,type:'secret',label:'Seaside message bottle',secretId:'coastletter',lines:[['TANYA','A note from a traveler long ago.'],['Message Bottle','When the sea is dark, be someone else’s light.']]}],
+  intro:[['Narrator','At the edge of the world, the sea whispers against a quiet pier.'],['TANYA','The lighthouse is dark. Someone could lose their way.'],['TAN','We have plenty of light to share. Let’s help.']],
+  outro:[['TAN','The lighthouse is shining again!'],['TANYA','Now every boat can find its way home. So can we.']],
   message:'Collect eight hearts and three sea stars. Restore two piers and the lighthouse.',checkpoint:[42,840,1568]},
  {id:'forever',title:'The Forever Garden',emoji:'💞',number:'10',short:'One last wish beneath a thousand stars',width:2170,exit:2030,goal:9,
   grounds:[[0,2170]],platforms:[[227,177,90,10],[676,178,85,10],[1065,174,85,10],[1500,175,90,10],[1843,180,80,10]],
@@ -124,9 +124,9 @@ const LEVELS=[
    {x:787,type:'switch',label:'Stone of Courage',switchId:'wish_courage',needs:'dog'},
    {x:1210,type:'switch',label:'Stone of Home',switchId:'wish_home',needs:'partner'},
    {x:1710,type:'switch',label:'Stone of Forever',switchId:'wish_forever',needs:'stars'},
-   {x:1885,type:'secret',label:'The last love letter',secretId:'foreverletter',lines:[['Luna','There is one more letter tucked into the flowers...'],['Last Letter','Our adventure was never about finding the perfect place. It was about finding someone to share every place with.'],['Milo','And I would choose this adventure with you again. Every time.']]}],
-  intro:[['Narrator','Following the lighthouse beam, the three friends find a garden under a sky full of stars.'],['Milo','Ten chapters, countless small miracles.'],['Luna','Let’s make one final wish together.']],
-  outro:[['Luna','All four wishing stones are glowing.'],['Milo','Our story ends here on the map, but not in our hearts.'],['Pudding','Woof! There is always room for one more adventure.']],
+   {x:1885,type:'secret',label:'The last love letter',secretId:'foreverletter',lines:[['TANYA','There is one more letter tucked into the flowers...'],['Last Letter','Our adventure was never about finding the perfect place. It was about finding someone to share every place with.'],['TAN','And I would choose this adventure with you again. Every time.']]}],
+  intro:[['Narrator','Following the lighthouse beam, the three friends find a garden under a sky full of stars.'],['TAN','Ten chapters, countless small miracles.'],['TANYA','Let’s make one final wish together.']],
+  outro:[['TANYA','All four wishing stones are glowing.'],['TAN','Our story ends here on the map, but not in our hearts.'],['Pudding','Woof! There is always room for one more adventure.']],
   message:'Find nine hearts and three memory stars, light four wishing stones, and reach the final arch.',checkpoint:[42,590,1100,1610]}
 ];
 const HOME_ITEMS=[
@@ -198,7 +198,7 @@ function setMenu(){
 }
 function localStorageAvailable(){try{return typeof localStorage!=='undefined'}catch(e){return false}}
 function startDialogue(lines,onComplete){game.dialogue=lines;game.dialogueIndex=0;game.afterDialogue=onComplete||null;game.mode='dialogue';$('dialogueBox').classList.remove('hidden');$('actionHint').classList.add('hidden');showDialogue()}
-function showDialogue(){const line=game.dialogue[game.dialogueIndex];if(!line)return;$('dialogueWho').textContent=line[0];$('dialogueText').textContent=line[1];$('dialogueAvatar').textContent=line[0]==='Luna'?'🌸':line[0]==='Milo'?'🍯':line[0]==='Pudding'?'🐶':line[0].includes('Florist')?'☕':'✦';}
+function showDialogue(){const line=game.dialogue[game.dialogueIndex];if(!line)return;$('dialogueWho').textContent=line[0];$('dialogueText').textContent=line[1];$('dialogueAvatar').textContent=line[0]==='TANYA'?'🌸':line[0]==='TAN'?'🍯':line[0]==='Pudding'?'🐶':line[0].includes('Florist')?'☕':'✦';}
 function nextDialogue(){if(game.mode!=='dialogue')return;game.dialogueIndex++;if(game.dialogueIndex<game.dialogue.length){beep('collect');showDialogue();return}$('dialogueBox').classList.add('hidden');const done=game.afterDialogue;game.afterDialogue=null;game.mode='playing';if(done)done()}
 $('dialogueNext').addEventListener('click',nextDialogue);
 function showPanel(html,mode='panel'){game.mode=mode;$('actionHint').classList.add('hidden');$('panelCard').innerHTML=html;$('panelOverlay').classList.remove('hidden')}
@@ -252,7 +252,7 @@ function shopPanel(){
 function wardrobePanel(){
  if(game.level!==5)return;
  const items=CLOTHES.map(item=>`<button class="shop-item" data-outfit="${item.id}"><span class="shop-icon">${item.id==='daily'?'🧸':item.id==='pajama'?'🌙':'⭐'}</span><span class="shop-description"><strong>${item.name}</strong><small>${item.description}</small></span><span class="shop-price">${save.outfit===item.id?'✓ Wearing':'Try on →'}</span></button>`).join('');
- showPanel(`<div class="panel-kicker">TWO LITTLE OUTFITS</div><h2>🧥 Matching Wardrobe</h2><p>Pick a look for today. Milo and Luna will change together.</p><div class="shop-grid">${items}</div><div class="panel-actions"><button class="soft-button" id="wardrobeClose">Keep Exploring</button></div>`,'wardrobe');
+ showPanel(`<div class="panel-kicker">TWO LITTLE OUTFITS</div><h2>🧥 Matching Wardrobe</h2><p>Pick a look for today. TAN and TANYA will change together.</p><div class="shop-grid">${items}</div><div class="panel-actions"><button class="soft-button" id="wardrobeClose">Keep Exploring</button></div>`,'wardrobe');
  document.querySelectorAll('[data-outfit]').forEach(btn=>btn.addEventListener('click',()=>{save.outfit=btn.dataset.outfit;writeSave();beep('heart');wardrobePanel();toast('✨ Wearing: '+CLOTHES.find(c=>c.id===save.outfit).name)}));$('wardrobeClose').onclick=hidePanel;
 }
 function beginNew(){
@@ -290,7 +290,7 @@ function interact(){
   if(near.type==='dog'){
    if(p.dogRescued||save.dogUnlocked){toast('🐶 Pudding wags his tail!');beep('heart');particles(near.x,193,'#ffdca7',7);return}
    p.dogRescued=true;save.dogUnlocked=true;game.dog.x=game.player.x-38;game.dog.y=game.player.y+9;writeSave();beep('heart');particles(near.x,199,'#e1b2aa',20);updateHUD();
-   startDialogue([['Luna','A little puppy! Are you lost?'],['Milo','His name tag says Pudding. Want to come with us?'],['Pudding','Woof! ♥ Pudding has joined the adventure!']]);return;
+   startDialogue([['TANYA','A little puppy! Are you lost?'],['TAN','His name tag says Pudding. Want to come with us?'],['Pudding','Woof! ♥ Pudding has joined the adventure!']]);return;
   }
   if(near.type==='secret'){
    if(p.secrets.includes(near.secretId)){toast('💌 You already found this secret letter.');return}
@@ -303,13 +303,13 @@ function interact(){
    if(p.switches.includes(near.switchId)){toast('✨ This switch is already glowing.');return}
    const partnerNear=range(game.partner.x+7,near.x)<65,dogNear=range(game.dog.x+6,near.x)<88;
    if(near.needs==='dogpartner'&&!(p.dogRescued||save.dogUnlocked)){toast('🐶 Rescue Pudding first!');return}
-   if(near.needs==='dogpartner'&&(!partnerNear||!dogNear)){toast('💕 Wait for Luna and Pudding!');return}
-   if(near.needs==='partner'&&!partnerNear){toast('💕 Wait for Luna to join you!');return}
+   if(near.needs==='dogpartner'&&(!partnerNear||!dogNear)){toast('💕 Wait for TANYA and Pudding!');return}
+   if(near.needs==='partner'&&!partnerNear){toast('💕 Wait for TANYA to join you!');return}
    if(near.needs==='dog'&&(!save.dogUnlocked||!dogNear)){toast('🐶 Pudding needs to be nearby!');return}
    if(near.needs==='stars'&&p.stars.length<3){toast('⭐ Find three glowing stars first!');return}
    p.switches.push(near.switchId);writeSave();particles(near.x,160,'#ffdf88',24);beep('puzzle');updateHUD();
    const lines={home_living:'The living room feels warmer already!',home_kitchen:'We can bake cookies here someday!',home_balcony:'Woof! The balcony lamp shines!',bridge:'The bridge is back! We can cross safely.',beacon:'The rain is ending. Look at that light!',forest_bridge:'Pudding helped light the first bridge!',forest_glade:'The forest opened a path for us.',sky_wind:'The first cloud bridge is glowing!',sky_cloud:'Pudding made the next bridge appear!',sky_wish:'The final cloud bridge is ready!',lake_one:'A lantern bridge rises from the lake!',lake_two:'Pudding found another hidden path!',lake_three:'Every lantern is reflecting the stars!',fair_candy:'Sweet treats for everyone!',fair_carousel:'The carousel is spinning again!',fair_fireworks:'Look! A thousand lights in the sky!',coast_pier:'The first pier is safe to cross!',coast_bridge:'The second pier is back!',coast_beacon:'The lighthouse can guide everyone home!',wish_laugh:'May we always have reasons to laugh.',wish_courage:'May we be brave for each other.',wish_home:'May home always feel like this.',wish_forever:'May every tomorrow be a new chapter.'};
-   startDialogue([[near.needs==='dog'?'Pudding':'Luna',lines[near.switchId]||'A warm light awakens.']]);return;
+   startDialogue([[near.needs==='dog'?'Pudding':'TANYA',lines[near.switchId]||'A warm light awakens.']]);return;
   }
  }
  if(save.dogUnlocked&&range(x,game.dog.x+6)<29&&game.level>=3){toast('🐾 Pudding nuzzles your hand!');beep('heart');particles(game.dog.x,game.dog.y,'#eebfa5',6);return}
@@ -351,7 +351,7 @@ function step(){game.ticks++;if(game.mode!=='playing')return;
  game.camera=clamp(pl.x-149,0,L.width-W);
  for(let i=0;i<L.hearts.length;i++){if(p.collected.includes(i))continue;const item=L.hearts[i];if(range(pl.x+pl.w/2,item[0])<16&&range(pl.y+pl.h/2,item[1])<22){p.collected.push(i);save.coins+=12;writeSave();beep('collect');particles(item[0],item[1],'#f5b0ad');updateHUD();toast(`♥ Hearts ${p.collected.length} / ${L.goal}`)}}
  if(game.level===1){for(let i=0;i<L.keys.length;i++){if(p.keys.includes(i))continue;const item=L.keys[i];if(range(pl.x+7,item[0])<18&&range(pl.y+11,item[1])<20){p.keys.push(i);writeSave();beep('puzzle');particles(item[0],item[1],'#f9d68c',14);updateHUD();toast(`🗝 Keys ${p.keys.length} / 3`)}}}
- if(game.level===2&&!p.umbrella&&range(pl.x+7,L.umbrellaX)<17&&range(pl.y+11,192)<27){p.umbrella=true;writeSave();beep('puzzle');particles(L.umbrellaX,188,'#c2aee9');updateHUD();startDialogue([['Milo','An umbrella! No more soggy shoes.'],['Luna','Let’s share it while we repair the star switches.']])}
+ if(game.level===2&&!p.umbrella&&range(pl.x+7,L.umbrellaX)<17&&range(pl.y+11,192)<27){p.umbrella=true;writeSave();beep('puzzle');particles(L.umbrellaX,188,'#c2aee9');updateHUD();startDialogue([['TAN','An umbrella! No more soggy shoes.'],['TANYA','Let’s share it while we repair the star switches.']])}
  if([4,6,7,8,9].includes(game.level)){for(let i=0;i<L.stars.length;i++){
   if(p.stars.includes(i))continue;const [sx,sy]=L.stars[i];
   if(range(pl.x+7,sx)<17&&range(pl.y+11,sy)<22){p.stars.push(i);writeSave();beep('puzzle');particles(sx,sy,'#fff0ae',12);updateHUD();toast(`⭐ Glowing stars ${p.stars.length} / 3`)}
@@ -554,6 +554,9 @@ function drawAvatar(x,y,which,face=1,walk=0){x=Math.round(x);y=Math.round(y);con
  if(face<0){/* Sprite is visually symmetric; facing remains part of movement state. */}
 }
 function paintActors(){ctx.save();ctx.translate(-Math.round(game.camera),0);const pl=game.player,pn=game.partner;const groundShadow=(x,y)=>{rect(x+2,Math.min(FLOOR+3,y+22),12,2,'#957a7544')};groundShadow(pn.x,pn.y);groundShadow(pl.x,pl.y);drawAvatar(pn.x,pn.y,'partner',pn.face,range(pn.x,pl.x-30)>4);drawAvatar(pl.x,pl.y,'player',pl.face,Math.abs(pl.vx)>.1);
+ // Personalized name labels. Player is TAN (boy), companion is TANYA (girl).
+ const drawName=(name,x,y,color)=>{const center=Math.round(x+7),top=Math.round(y-16),width=name.length*5+9;rect(center-Math.round(width/2),top-2,width,11,'#fff9ede8');textAt(name,center,top+6,color,'bold 8px monospace','center')};
+ drawName('TANYA',pn.x,pn.y,'#a05d71');drawName('TAN',pl.x,pl.y,'#806d5b');
  if(game.level>=3&&(save.dogUnlocked||progress().dogRescued))drawDog(game.dog.x,game.dog.y);
  if(game.level===2&&progress().umbrella){const anchorX=pn.x+10,anchorY=pn.y-8;rect(anchorX-10,anchorY,24,4,'#af91bd');rect(anchorX-7,anchorY-5,18,6,'#c2accc');rect(anchorX-3,anchorY-9,10,5,'#d6c3df');rect(anchorX+2,anchorY+4,2,13,'#a38b9a');}
  for(const q of game.particles){rect(q.x,q.y,q.size,q.size,q.color)}
