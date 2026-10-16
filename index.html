@@ -1,0 +1,79 @@
+<!doctype html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width,initial-scale=1,viewport-fit=cover" />
+  <meta name="theme-color" content="#fff0db" />
+  <meta name="description" content="Our Love Adventure — a cozy ten-chapter pixel adventure about friendship, love, and a little dog named Pudding. Play in your browser!" />
+  <meta property="og:title" content="Our Love Adventure · Final Edition" />
+  <meta property="og:description" content="Ten tiny worlds. Two hearts. One cozy home. A free pixel adventure made with love." />
+  <link rel="icon" type="image/svg+xml" href="assets/heart.svg" />
+  <title>Our Love Adventure · Final Edition</title>
+  <link rel="stylesheet" href="assets/styles.css" />
+</head>
+<body>
+  <div class="shell">
+    <header class="topbar">
+      <div class="brand"><span class="brand-heart">♥</span><div><strong>OUR LOVE ADVENTURE</strong><small>Ten tiny worlds. One big love.</small></div></div>
+      <div class="header-actions"><span class="version">FINAL EDITION · 10 CHAPTERS</span><button class="mini-button" id="audioBtn" aria-label="Toggle sound" title="Toggle sound">♫ <span id="audioLabel">Sound Off</span></button></div>
+    </header>
+    <main>
+      <div class="game-shell">
+        <div class="game-screen" id="gameScreen">
+          <canvas id="game" width="480" height="270" aria-label="Our Love Adventure pixel platform game. Use keyboard or touch controls." role="img"></canvas>
+          <div class="hud hidden" id="hud">
+            <div class="hud-left"><span class="hud-level" id="hudLevel">🌸 01 / First Bloom Garden</span><span class="hud-chapter" id="hudObjective">Collect hearts to open the gate</span></div>
+            <div class="hud-right"><div class="counter heart-counter">♥ <span id="heartCount">0 / 5</span></div><div class="counter" id="otherCounter" style="display:none"></div><button id="pauseBtn" class="hud-btn" title="Pause / Journey Map" aria-label="Pause game">Ⅱ</button></div>
+          </div>
+          <div class="hint-pill hidden" id="actionHint">Press E to interact</div>
+          <div class="toast hidden" id="toast" role="status" aria-live="polite"></div>
+          <div class="screen-overlay" id="menuOverlay">
+            <div class="landing-ornament">✦ &nbsp; ✿ &nbsp; ✦</div>
+            <div class="menu-card">
+              <div class="eyebrow">A LITTLE PIXEL STORY FOR TWO</div>
+              <div class="hero-mark">♥</div>
+              <h1>Our Love<br/><span>Adventure</span></h1>
+              <p class="hero-subtitle">Ten chapters. One cozy home. A lifetime of little adventures.</p>
+              <div class="menu-buttons">
+                <button id="startBtn" class="main-button">✦ New Adventure <span>→</span></button>
+                <button id="continueBtn" class="soft-button hidden">↪ Continue My Story</button>
+                <button id="chapterSevenBtn" class="soft-button">🌙 Played V3? Begin Chapter 7</button>
+                <button id="selectBtn" class="text-button">♡ Journey Map / Chapter Select</button>
+              </div>
+            </div>
+            <div class="landing-bottom">✿ ONE PLAYER, TWO HEARTS ✿</div>
+          </div>
+          <div class="screen-overlay hidden" id="panelOverlay"><div class="panel-card" id="panelCard"></div></div>
+          <div class="dialogue hidden" id="dialogueBox" role="dialog" aria-label="Story dialogue">
+            <span class="dialogue-avatar" id="dialogueAvatar">♥</span>
+            <div class="dialogue-body"><strong id="dialogueWho">Narrator</strong><p id="dialogueText"></p></div>
+            <button id="dialogueNext" class="dialogue-next">Next <span>›</span></button>
+          </div>
+        </div>
+        <div class="below-screen">
+          <div class="mission"><span class="mission-icon">✦</span><span id="missionText">A cozy adventure in ten little chapters.</span></div>
+          <div class="home-tools hidden" id="homeTools"><button class="map-button" id="homeShopBtn">🛋️ Furniture</button><button class="map-button" id="homeClothesBtn">🧥 Outfits</button></div>
+          <button class="map-button" id="mapBtn">◫ Journey Map</button>
+        </div>
+      </div>
+      <div class="touch-bar hidden" id="touchBar" aria-label="Touch game controls">
+        <div class="touch-group"><button id="leftTouch" class="touch-key" aria-label="Move left">◀</button><button id="rightTouch" class="touch-key" aria-label="Move right">▶</button></div>
+        <span class="touch-help">Tap to move and explore</span>
+        <div class="touch-group"><button id="jumpTouch" class="touch-key jump-key" aria-label="Jump">↑<small>JUMP</small></button><button id="actTouch" class="touch-key action-key" aria-label="Interact">♥<small>ACT</small></button></div>
+      </div>
+      <div class="save-bar">
+        <span class="save-note">♡ Auto-saves in this browser · Export to move devices</span>
+        <button class="save-button" id="exportSaveBtn">↓ Export Save</button>
+        <button class="save-button" id="importSaveBtn">↑ Import Save</button>
+        <input type="file" id="importSaveInput" accept=".json,application/json" style="display:none" aria-label="Choose a saved-game JSON file" />
+      </div>
+      <div class="footer-grid">
+        <div class="info-card"><div class="info-symbol">⌨</div><div><h3>Keyboard Controls</h3><p>← → / A D to move · Space / W / ↑ to jump · E to interact · ESC to pause.</p></div></div>
+        <div class="info-card"><div class="info-symbol">♥</div><div><h3>How to Play</h3><p>Collect hearts, solve switches, rescue Pudding, decorate your home, and reach the glowing gate. Look for hidden letters!</p></div></div>
+      </div>
+      <footer class="footer-note">HANDCRAFTED WITH ♡ · 10 CHAPTERS · NO ACCOUNT · NO TRACKING · JUST A LITTLE ADVENTURE</footer>
+    </main>
+  </div>
+  <script src="assets/game.js"></script>
+</body>
+</html>
